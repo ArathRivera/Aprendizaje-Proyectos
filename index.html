@@ -3,66 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Escuela Preparatoria Oficial 344</title>
     <style>
         body {
+            background-color: #FFFFCC;
             font-family: Arial, sans-serif;
+            line-height: 1.5;
+            color: #000000;
+        }
+        .header {
+            background-color: #0000FF;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        .header img {
+            max-width: 100%;
+            height: auto;
+        }
+        .header h1 {
+            font-size: 2em;
+            margin: 10px 0;
         }
         nav {
-            margin-bottom: 20px;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-        .gallery {
             display: flex;
-            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        nav button {
+            background-color: #FFFFFF;
+            color: #0000FF;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        nav button:hover {
+            background-color: #DDD;
+            transform: scale(1.1);
+            transition: transform 0.3s;
+        }
+        section {
+            padding: 20px;
+            text-align: justify;
         }
         .gallery img {
-            margin: 10px;
-            max-width: 200px;
+            width: 100%;
+            max-width: 600px;
             height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0000FF;
+            color: #FFFFFF;
         }
     </style>
 </head>
 <body>
 
-    <nav>
+    <div class="header">
+        <img src="https://www.elfinanciero.com.mx/resizer/9OCNcY6h6z9e3M3Y21gSkSHc1C4=/arc-photo-elfinanciero/arc2-prod/public/Y5FKXUEDYBCIXAE6O2RWAGPVKQ.jpg" alt="Imagen de la Biblioteca Central UNAM">
+        <h1>ESCUELA PREPARATORIA OFICIAL 344. MARTIRES DEL 1968.<br>C.C.T. 15EBH0549B TURNO VESPERTINO</h1>
+        <nav>
+            <button onclick="document.getElementById('nuestraEscuela').scrollIntoView();">NUESTRA ESCUELA</button>
+            <button onclick="document.getElementById('docentes').scrollIntoView();">DOCENTES</button>
+            <button onclick="document.getElementById('uprez').scrollIntoView();">UPREZ</button>
+            <button onclick="document.getElementById('galeria').scrollIntoView();">GALERIA</button>
+            <button onclick="document.getElementById('contacto').scrollIntoView();">INFORMACIÓN DE CONTACTO</button>
+        </nav>
+    </div>
+
+    <section id="nuestraEscuela">
+        <h2>Nuestra Escuela</h2>
+        <p>
+            <strong>Apertura</strong><br>
+            Se fundó con el objetivo de que la comunidad de Tlapala tuviera una mejor educación para sus jóvenes.
+            Si bien las instalaciones son prestadas por la Escuela Telesecundaria Emiliano Zapata Salazar, La Directora Susana Díaz Reyes, lucha día con día por la construcción del edificio.
+            Esto es un proyecto de la comunidad.
+        </p>
+        <p>
+            <strong>Lema</strong><br>
+            “Yo quiero para mis alumnos, lo mismos que quiero para mis hijos”<br>
+            Profesor: Ezequiel Fredi Ocampo Landa
+        </p>
+    </section>
+
+    <section id="docentes">
+        <h2>Docentes</h2>
         <ul>
-            <li><a href="#deporte">Deporte</a></li>
-            <li><a href="#hagan-deporte">Hagan Deporte</a></li>
-            <li><a href="#galeria">Galería</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li>Aguilar Ríos José Juan</li>
+            <li>Barrera Díaz José</li>
+            <li>Barrera Díaz Nathaly (Orientadora de Terceros)</li>
+            <li>Barrera Hernández Helio</li>
+            <li>Cervantes Jaime Áaron (Secretario)</li>
+            <li>Díaz Reyes Susana (Directora Escolar)</li>
+            <li>Franco Higuera Wendy Maricruz</li>
+            <li>Galicia Aguilar Jaqueline</li>
+            <li>Gonzaga Corrales Maximino Javier</li>
+            <li>Gutierrez Mártinez Mario Gerardo</li>
+            <li>Leal Ramirez Olivia (Orientadora de Primeros)</li>
+            <li>Maestra Arcelia (Administrativa)</li>
+            <li>Maestra Daniela (Orientadora de Segundos)</li>
+            <li>Mártinez Alarcón Manuel Alejandro</li>
+            <li>Mejorada Fernandez Alma Delfina</li>
+            <li>Mora Medina Karla</li>
+            <li>Neri Perez Gloria</li>
+            <li>Reyes Pérez Josefina</li>
+            <li>Sánchez Vergara Lizbeth</li>
+            <li>Sánchez Vergara Willi</li>
+            <li>Varela Rivera Maria de los Angele</li>
         </ul>
-    </nav>
-
-    <section id="deporte">
-        <h2>Deporte</h2>
-        <p>Información sobre deportes...</p>
     </section>
 
-    <section id="hagan-deporte">
-        <h2>Hagan Deporte</h2>
-        <p>Motivación para hacer deporte...</p>
+    <section id="uprez">
+        <h2>UPREZ</h2>
+        <p>
+            La Unión Popular Revolucionaria Emiliano Zapata (Uprez) fundada el 1 de Febrero de 1987. Tiene como objetivo formar una organización frentista que ayude a la transformación del país.
+            Poner en práctica el Derecho a la Ciudad y la Defensa del Territorio.
+            Esta institución no solo ayudo a la fundación de la EPO 344 “Mártires de 1968”, ya que como esta han fundado muchas escuelas más.
+        </p>
     </section>
 
-    <section id="galeria">
+    <section id="galeria" class="gallery">
         <h2>Galería</h2>
-        <div class="gallery">
-            <img src="ruta/de/la/imagen.jpg" alt="Estudiantes desfilando">
-            <!-- Puedes agregar más imágenes aquí -->
-        </div>
+        <p>Nuestra institución y alumnos</p>
+        <img src="imagen1.jpg" alt="Foto grupal de estudiantes">
+        <img src="imagen2.jpg" alt="Estudiantes en desfile">
     </section>
 
     <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Información de contacto...</p>
+        <h2>Información de Contacto</h2>
+        <p>
+            Dirección: Calle Prolongación Manuel Hernández #1 La Candelaria Tlapala, Municipio de Chalco C.P. 56641<br>
+            Teléfono: 55 5982 1169<br>
+            Correo Electrónico: preparatory344@gmail.com
+        </p>
     </section>
+
+    <footer>
+        <p>CREADO POR RIVERA NAVARRO (JAROSLAW)</p>
+    </footer>
 
 </body>
 </html>
