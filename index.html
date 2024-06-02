@@ -6,82 +6,121 @@
     <title>Porsche 911</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica', 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8;
+            background-color: #f5f5f5;
             color: #333;
         }
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
+            background-color: #000;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        nav {
-            background-color: #444;
-            padding: 10px 0;
-            text-align: center;
+        header img {
+            height: 50px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
         }
         nav a {
-            text-decoration: none;
             color: #fff;
-            padding: 10px 20px;
-            margin: 0 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+            text-decoration: none;
         }
         nav a:hover {
-            background-color: #666;
+            text-decoration: underline;
         }
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .hero {
+            position: relative;
+            height: 100vh;
+            background: url('porsche-911.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            animation: zoomBackground 20s infinite;
         }
-        h2 {
-            color: #333;
+        @keyframes zoomBackground {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
         }
-        p {
-            line-height: 1.6;
+        .content {
+            padding: 40px 20px;
+        }
+        .gallery img {
+            width: 100%;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Porsche 911</h1>
+        <img src="porsche-logo.png" alt="Porsche Logo">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#modelos">Modelos</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="#historia">Historia</a>
-        <a href="#creacion">Creación del Porsche</a>
-        <a href="#caracteristicas">Características</a>
-        <a href="#tipos">Tipos de Porsche y Modelos</a>
-    </nav>
-    <section id="historia">
+    <section class="hero" id="inicio">
+        <h1>Descubre el Porsche 911</h1>
+        <p>La perfección en cada detalle</p>
+    </section>
+    <section class="content" id="historia">
         <h2>Historia</h2>
-        <p>Desde la fundación de Porsche...</p>
+        <p>El Porsche 911 ha evolucionado desde su introducción en 1964...</p>
     </section>
-    <section id="creacion">
-        <h2>Creación del Porsche</h2>
-        <p>25 de abril de 1931, Stuttgart, Alemania...</p>
-        <h3>Precio del Porsche</h3>
-        <p>Porsche 911 Carrera: El precio base suele comenzar alrededor de $100,000 a $110,000.</p>
-        <p>Porsche 911 Carrera S: Tiene un precio base que generalmente comienza alrededor de $115,000 a $125,000.</p>
-        <p>Porsche 911 Carrera 4: La variante con tracción en las cuatro ruedas suele tener un precio base similar al Carrera estándar.</p>
-        <p>Porsche 911 Turbo: Los modelos Turbo tienen precios que comienzan típicamente en el rango de $170,000 a $200,000, dependiendo de la especificación y el año del modelo.</p>
-        <p>Porsche 911 Turbo S: Esta versión de alto rendimiento generalmente tiene un precio base que supera los $200,000, llegando incluso a los $250,000 o más para los modelos más recientes y mejor equipados.</p>
+    <section class="content" id="modelos">
+        <h2>Modelos</h2>
+        <p>Conoce los diferentes modelos del Porsche 911...</p>
     </section>
-    <section id="caracteristicas">
-        <h2>Características</h2>
-        <p>Nomenclatura 911...</p>
+    <section class="content gallery" id="galeria">
+        <h2>Galería</h2>
+        <img src="porsche-911-1.jpg" alt="Porsche 911">
+        <img src="porsche-911-2.jpg" alt="Porsche 911">
+        <img src="porsche-911-3.jpg" alt="Porsche 911">
     </section>
-    <section id="tipos">
-        <h2>Tipos de Porsche y Modelos</h2>
-        <p>911 S...</p>
+    <section class="content" id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Mensaje:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <button type="submit">Enviar</button>
+        </form>
     </section>
+    <footer>
+        <p>&copy; 2024 Porsche. Todos los derechos reservados.</p>
+        <p>Síguenos en: 
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
 </body>
 </html>
-
-
