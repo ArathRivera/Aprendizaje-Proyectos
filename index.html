@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f3f3f3;
+            background-color: #f0f0f0;
             color: #333;
             margin: 0;
             padding: 0;
@@ -15,31 +15,39 @@
         header {
             background-color: #333;
             color: #fff;
+            padding: 20px;
             text-align: center;
-            padding: 20px 0;
         }
         nav {
-            background-color: #666;
+            background-color: #444;
             color: #fff;
+            padding: 10px;
             text-align: center;
-            padding: 10px 0;
         }
         nav a {
             color: #fff;
             text-decoration: none;
+            padding: 5px 10px;
             margin: 0 10px;
+            transition: background-color 0.3s;
         }
-        .section {
+        nav a:hover {
+            background-color: #555;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .info {
             background-color: #fff;
             color: #333;
             padding: 20px;
-            margin: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-        .section:hover {
-            transform: scale(1.05);
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -53,22 +61,40 @@
         <a href="#caracteristicas">Características</a>
         <a href="#tipos">Tipos de Porsche y Modelos</a>
     </nav>
-    <div id="historia" class="section">
+    <section id="historia" class="info">
         <h2>Historia</h2>
-        <p>Desde la fundación de Porsche...</p>
-        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fhogstavaxeln.se%2F2024%2F01%2F19%2Ftest-vi-korde-nastan-alla-generationer-porsche-911%2F&psig=AOvVaw16Z4nD0AiGSJAjNPHVbUx4&ust=1717350735953000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKiwqaX8uoYDFQAAAAAdAAAAABAJ" alt="Ilustración de Porsche" width="400">
-    </div>
-    <div id="creacion" class="section">
+        <p>Desde la fundación de Porsche, la empresa solamente fabricaba el modelo Porsche 356 al que posteriormente reemplazó...</p>
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fhogstavaxeln.se%2F2024%2F01%2F19%2Ftest-vi-korde-nastan-alla-generationer-porsche-911%2F&psig=AOvVaw16Z4nD0AiGSJAjNPHVbUx4&ust=1717350735953000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKiwqaX8uoYDFQAAAAAdAAAAABAJ" alt="Porsche 911">
+    </section>
+    <section id="creacion" class="info">
         <h2>Creación del Porsche</h2>
         <p>25 de abril de 1931, Stuttgart, Alemania...</p>
-    </div>
-    <div id="caracteristicas" class="section">
+        <p>Precio del Porsche...</p>
+    </section>
+    <section id="caracteristicas" class="info">
         <h2>Características</h2>
         <p>Nomenclatura 911...</p>
-    </div>
-    <div id="tipos" class="section">
+        <p>Motores refrigerados por aire...</p>
+        <p>Diseño Porsche 911 (clásico)...</p>
+    </section>
+    <section id="tipos" class="info">
         <h2>Tipos de Porsche y Modelos</h2>
         <p>911 S...</p>
-    </div>
+        <img src="https://www.google.com/imgres?q=911%20s%20porsche&imgurl=https%3A%2F%2Ffiles.porsche.com%2Ffilestore%2Fimage%2Fmultimedia%2Fnone%2F992-c2s-modelexplorer-04%2Fnormal%2Fe6983412-cf38-11eb-80d9-005056bbdc38%3BsS%3Btwebp%2Fporsche-normal.webp&imgrefurl=https%3A%2F%2Fwww.porsche.com%2Flatin-america-es%2F_mexico_%2Fmodels%2F911%2F911-models%2Fcarrera-s-cabriolet%2F&docid=xNPbCb438OdQCM&tbnid=VdoVWPYYQGL3-M&vet=12ahUKEwj3kNWC_LqGAxXbHkQIHRzjCPwQM3oFCIYBEAA..i&w=384&h=216&hcb=2&itg=1&ved=2ahUKEwj3kNWC_LqGAxXbHkQIHRzjCPwQM3oFCIYBEAA" alt="911 S">
+        <p>911 T...</p>
+        <img src="https://www.google.com/imgres?q=911%20t%20porsche&imgurl=https%3A%2F%2Ffiles.porsche.com%2Ffilestore%2Fimage%2Fmultimedia%2Fnone%2F992-carrera-t-modelexplorer%2Fnormal%2Fb34fb743-4ede-11ed-80f7-005056bbdc38%3BsS%3Btwebp%2Fporsche-normal.webp&imgrefurl=https%3A%2F%2Fwww.porsche.com%2Fmexico%2Fmodels%2F911%2F911-models%2Fcarrera-t%2F&docid=GtbFgTJ6nZpxtM&tbnid=Ob2yc5yTHJ8KwM&vet=12ahUKEwjenPz3-7qGAxUzJUQIHQL3JL4QM3oECBsQAA..i&w=384&h=216&hcb=2&ved=2ahUKEwjenPz3-7qGAxUzJUQIHQL3JL4QM3oECBsQAA" alt="911 T">
+        <p>911 L...</p>
+        <img src="https://www.google.com/imgres?q=911%20l%20porsche&imgurl=https%3A%2F%2Fwww.stuttcars.com%2Fwp-content%2Fuploads%2F2016%2F04%2FPorsche-911-L-Coupe-2.0-SWB-9.jpg&imgrefurl=https%3A%2F%2Fwww.stuttcars.com%2Fporsche-911-l-1968%2F&docid=L7I5WB4vixCC1M&tbnid=rKRQCgsdI37VzM&vet=12ahUKEwiRt5ji-7qGAxUgJUQIHQvnA-YQM3oECEQQAA..i&w=2048&h=1372&hcb=2&ved=2ahUKEwiRt5ji-7qGAxUgJUQIHQvnA-YQM3oECEQQAA" alt="911 L">
+        <p>911 E...</p>
+        <img src="https://www.google.com/imgres?q=911%20e%20porsche&imgurl=https%3A%2F%2Ffiles.porsche.com%2Ffilestore%2Fimage%2Fmultimedia%2Fnone%2F992-gt3-modelimage-sideshot%2Fmodel%2F765dfc51-51bc-11eb-80d1-005056bbdc38%2Fporsche-model.png&imgrefurl=https%3A%2F%2Fwww.porsche.com%2Fmexico%2Fmodels%2F911%2F911-gt3-models%2F911-gt3%2F&docid=4e2XsXIyE1EWPM&tbnid=QQSA_SoN80QZsM&vet=12ahUKEwiViurv-7qGAxX_LUQIHT41BIwQM3oECG0QAA..i&w=1920&h=1080&hcb=2&ved=2ahUKEwiViurv-7qGAxX_LUQIHT41BIwQM3oECG0QAA" alt="911 E">
+        <p>Porsche 912...</p>
+        <img src="https://www.google.com/imgres?q=912%20porsche&imgurl=https%3A%2F%2Fcdn.motor1.com%2Fimages%2Fmgl%2F7ZvgRA%2Fs3%2Fporsche-912-by-kammanufaktur.jpg&imgrefurl=https%3A%2F%2Fes.motor1.com%2Fnews%2F704581%2Fporsche-912-carbono-damm-manufaktur%2F&docid=j58B7_ycPWhOhM&tbnid=iFPRHNgRQp3CwM&vet=12ahUKEwil4vbG-7qGAxUjD0QIHaOQC04QM3oECG0QAA..i&w=1280&h=720&hcb=2&ved=2ahUKEwil4vbG-7qGAxUjD0QIHaOQC04QM3oECG0QAA" alt="912 Porsche">
+        <p>911 R...</p>
+        <img src="https://www.google.com/imgres?q=911%20r%20porsche&imgurl=https%3A%2F%2Fimg.remediosdigitales.com%2F913113%2Fporsche-911-r-02%2F1366_2000.jpg&imgrefurl=https%3A%2F%2Fwww.motorpasion.com%2Fporsche%2Fporsche-911-r-1&docid=Gj-st42-8aXLkM&tbnid=DtS5mrSWeA561M&vet=12ahUKEwjo1IzU-7qGAxW3JkQIHdRtBsMQM3oECBgQAA..i&w=1366&h=768&hcb=2&ved=2ahUKEwjo1IzU-7qGAxW3JkQIHdRtBsMQM3oECBgQAA" alt="911 R">
+    </section>
+    <footer>
+        <p>&copy; 2024 Porsche. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
+
