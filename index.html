@@ -1,96 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Porsche 911 - Agencia de Autos</title>
-<style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
-}
-
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.section {
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: #eaeaea;
-    transition: all 0.3s;
-    cursor: pointer;
-}
-
-.section:hover {
-    transform: scale(1.05);
-}
-
-.section h2 {
-    margin-top: 0;
-}
-
-.section-content {
-    display: none;
-}
-
-.section.active .section-content {
-    display: block;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche 911</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            background-color: #666;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .section {
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .section:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
-
-<div class="container">
-    <div class="section" onclick="toggleSection('historia')">
+    <header>
+        <h1>Porsche 911</h1>
+    </header>
+    <nav>
+        <a href="#historia">Historia</a>
+        <a href="#creacion">Creación del Porsche</a>
+        <a href="#caracteristicas">Características</a>
+        <a href="#tipos">Tipos de Porsche y Modelos</a>
+    </nav>
+    <div id="historia" class="section">
         <h2>Historia</h2>
-        <div class="section-content">
-            <p>Desde la fundación de Porsche...</p>
-            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fhogstavaxeln.se%2F2024%2F01%2F19%2Ftest-vi-korde-nastan-alla-generationer-porsche-911%2F&psig=AOvVaw16Z4nD0AiGSJAjNPHVbUx4&ust=1717350735953000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKiwqaX8uoYDFQAAAAAdAAAAABAJ" alt="Ilustración de Porsche" width="400">
-        </div>
+        <p>Desde la fundación de Porsche...</p>
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fhogstavaxeln.se%2F2024%2F01%2F19%2Ftest-vi-korde-nastan-alla-generationer-porsche-911%2F&psig=AOvVaw16Z4nD0AiGSJAjNPHVbUx4&ust=1717350735953000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKiwqaX8uoYDFQAAAAAdAAAAABAJ" alt="Ilustración de Porsche" width="400">
     </div>
-    <div class="section" onclick="toggleSection('caracteristicas')">
-        <h2>Características</h2>
-        <div class="section-content">
-            <p>Nomenclatura 911...</p>
-            <img src="(Link de imagen)" alt="Ilustración de Porsche" width="400">
-        </div>
-    </div>
-    <div class="section" onclick="toggleSection('tipos_modelos')">
-        <h2>Tipos de Porsche y Modelos</h2>
-        <div class="section-content">
-            <p>911 S...</p>
-            <img src="(Link de imagen)" alt="Ilustración de Porsche" width="400">
-            <!-- Agrega el resto de modelos con sus imágenes -->
-        </div>
-    </div>
-    <div class="section" onclick="toggleSection('creacion')">
+    <div id="creacion" class="section">
         <h2>Creación del Porsche</h2>
-        <div class="section-content">
-            <p>25 de abril de 1931, Stuttgart, Alemania...</p>
-        </div>
+        <p>25 de abril de 1931, Stuttgart, Alemania...</p>
     </div>
-</div>
-
-<script>
-function toggleSection(sectionId) {
-    var section = document.getElementById(sectionId);
-    section.classList.toggle('active');
-}
-</script>
-
-<footer style="text-align: center; margin-top: 20px;">CREADO POR JAROSLAW</footer>
-
+    <div id="caracteristicas" class="section">
+        <h2>Características</h2>
+        <p>Nomenclatura 911...</p>
+    </div>
+    <div id="tipos" class="section">
+        <h2>Tipos de Porsche y Modelos</h2>
+        <p>911 S...</p>
+    </div>
 </body>
 </html>
